@@ -1,0 +1,80 @@
+img {
+    width: 400px;
+}
+
+.memes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    /* max-width: 650px; */
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding-bottom: 500px;
+    padding-top: 15px;
+    margin: 10px 250px 15px 250px;
+    /* max-width: 650px; */
+    font-family: sans-serif;
+}
+
+html {
+    background-color: rgb(179, 179, 179);
+}
+
+article {
+    width: 800px;
+}
+
+.forum p {
+    color: rgb(36, 36, 36);
+    padding: 2px 250px 0 250px;
+    font-style: italic;
+}
+
+.forum h3 {
+    color: rgb(22, 35, 36);
+    padding: 10px 150px 0 220px;
+    font-style: italic;
+}
+
+.forum_inputs {
+    position: relative;
+    left: 200px;
+}
+
+.forum_inputs h2 {
+    padding-top: 50px;
+    color: rgb(61, 61, 61);
+}
+
+.logo {
+    width: 400px;
+    height: 150px;
+    opacity: 0.5;
+}
+
+button {
+    border: none;
+    background-color: rgb(216, 232, 236);
+    font-size: 18px;
+    font-style: bold;
+    margin: none;
+    padding: 15px;
+}
+
+button:hover,
+button:focus {
+    background-color: rgb(255, 255, 255);
+}
+
+li {
+    font-style: italic;
+}
