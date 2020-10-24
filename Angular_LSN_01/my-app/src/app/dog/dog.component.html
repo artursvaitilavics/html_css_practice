@@ -1,0 +1,19 @@
+<!-- <p>dog barks!</p>
+<p style="text-align:center">My dog's name is {{dogName}}</p>
+
+<h2 *ngIf="dogAge">My dog is {{dogAge}} old</h2>
+<h3 *ngIf="isActive">isActive are set to True</h3> -->
+
+<ul *ngFor="let item of dogNames">
+    <li (click)='deleteSelected(item)'>{{item}}</li>
+</ul>
+
+
+<p style="color:brown" *ngIf="dogNames.length <=2">Who let the dogs out</p>
+
+
+<div>
+    <input type="text" #name/>
+    <br/><br/>
+    <button (click)='onClick(name.value)' style="background-color:aqua; font-size: 20px; border:none; align-items:center; padding: 20px;">Clikc Me</button>
+</div>
