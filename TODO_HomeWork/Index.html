@@ -6,23 +6,33 @@
     <title>TODO Home Work</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
-<header>
-    <h1>TODO: </h1>
+<header class="main_header">
+    <h1 id="h1_name">TODO: </h1>
 </header>
 
 <body>
     <div class="todo_list">
-        <ol id="tolist">
-            <li>Task first one, just to do homework <button class="closeJob">X</button></li>
-            <li>Celebrate homework with some pizza <button class="closeJob">X</button></li>
+        <ol id="items">
+            <li class="list_item">Task first one, just to do homework <button class="closeJob">X</button></li>
+            <li class="list_item">Celebrate homework with some pizza <button class="closeJob">X</button></li>
         </ol>
     </div>
-    <form action="Todo">
-        <input/>
+    <form id="todo" action="Todo">
+        <input id="inputId" type="text" />
         <button>add</button>
     </form>
+    <div id="output">
+        <select class="form_control" style="margin: 5px;">
+            <option value="1">a</option>
+            <option value="2">b</option>
+            <option value="3">c</option>
+        </select>
+    </div>
+    <button class="btn btn-dark btn-block" id="button">Click Here</button>
+    <div id="box" style="width:400px; height:200px; background:#f4f4f4"></div>
 
-    <script src="todo_script.js"></script>
+    <script src="todo.js"></script>
+
 </body>
 
 
