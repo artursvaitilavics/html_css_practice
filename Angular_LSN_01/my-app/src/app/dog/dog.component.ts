@@ -7,24 +7,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DogComponent implements OnInit {
 
-  dogName: string = 'Bobis';
-  dogAge: number = 4;
-  isActive: boolean = false;
-
-  dogNames: string[] = [this.dogName,'Sharik'];
+  dogNames: string[] = [];
 
 
-  constructor() { }
+  constructor() {
+   }
 
   ngOnInit(): void {
+    this.fetchDogNames();
+  }
+
+  fetchDogNames() {
+    this.dogNames = ['Bobik', 'Sharik'];
   }
 
   onClick(newName: string) {
     this.dogNames.push(newName);
   }
 
-  deleteSelected(name: string) {
-    this.dogNames.splice(this.dogNames.indexOf(name), 1);
+  deleteSelected(index: number) {
+    this.dogNames.splice(index, 1);
+  }
+
+  ngOnDestroy(): void {
   }
 
 }

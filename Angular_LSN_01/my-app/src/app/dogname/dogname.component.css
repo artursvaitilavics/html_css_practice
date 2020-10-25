@@ -1,0 +1,11 @@
+a {
+    color: rgb(0, 66, 66);
+    background-color: aqua;
+    padding: 0px 10px 0px 10px;
+}
+
+a:hover {
+    color: rgb(0, 94, 94);
+    background-color: rgb(62, 178, 255);
+    padding: 0px 10px 0px 10px;
+}
