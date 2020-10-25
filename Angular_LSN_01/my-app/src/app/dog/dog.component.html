@@ -9,7 +9,7 @@
 </ul> -->
 
 
-<app-dogname *ngFor="let item of dogNames; index as i" [name]="item" (dogDeleted)="deleteSelected(i)">
+<app-dogname *ngFor="let item of dogNames; index as i" [name]="item" (dogDeleted)="deleteSelected(i)" (dogGood)="addGoodDog(i)">
 </app-dogname>
 
 

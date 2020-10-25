@@ -9,6 +9,7 @@ export class DognameComponent implements OnInit {
 
   @Input() name: string;
   @Output() dogDeleted: EventEmitter<string> = new EventEmitter();
+  @Output() dogGood: EventEmitter<string> = new EventEmitter();
 
   constructor() { }
 
@@ -17,6 +18,10 @@ export class DognameComponent implements OnInit {
 
   deleteDog() {
     this.dogDeleted.emit(this.name);
+  }
+
+  makeGoodDog() {
+    this.dogGood.emit('good dog');
   }
 
 }

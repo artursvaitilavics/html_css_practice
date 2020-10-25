@@ -29,6 +29,10 @@ export class DogComponent implements OnInit {
     this.dogNames.splice(index, 1);
   }
 
+  addGoodDog(index: number) {
+    this.dogNames[index] = "Good Dog " + this.dogNames[index];
+  }
+
   ngOnDestroy(): void {
   }
 
