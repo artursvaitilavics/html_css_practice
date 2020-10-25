@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Dog } from '../Models/dog';
+
 
 @Component({
   selector: 'app-dog',
@@ -7,7 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DogComponent implements OnInit {
 
-  dogNames: string[] = [];
+  dog: Dog = new Dog();
+  dogNames: string[];
 
 
   constructor() {
@@ -31,6 +34,11 @@ export class DogComponent implements OnInit {
 
   addGoodDog(index: number) {
     this.dogNames[index] = "Good Dog " + this.dogNames[index];
+  }
+
+  addNewDog() {
+    // alert('form subbmitted');
+    this.dogNames.push(this.dog.name);
   }
 
   ngOnDestroy(): void {

@@ -9,17 +9,28 @@
 </ul> -->
 
 
+<!-- <app-hero-form></app-hero-form> -->
+
+
+
+
 <app-dogname *ngFor="let item of dogNames; index as i" [name]="item" (dogDeleted)="deleteSelected(i)" (dogGood)="addGoodDog(i)">
 </app-dogname>
 
+<form #dogForm='ngForm' (ngSubmit)='addNewDog()'>
+    <label>Dog's Name</label>
+    <input type='text' name='name' [(ngModel)]='dog.name' />
+    <button type='submit'>Save</button>
+</form>
 
-<p style="color:brown" *ngIf="dogNames.length <= 2">Who let the dogs out</p>
+<!--
+<p style="color:brown" *ngIf="dogNames.length <= 2">Who let the dogs out</p> -->
 
 
-<div>
+<!-- <div>
     <input type="text" #name/>
     <br/><br/>
     <button (click)='onClick(name.value)'>
      Clikc Me
     </button>
-</div>
+</div> -->
